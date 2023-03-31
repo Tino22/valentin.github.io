@@ -2,3 +2,5 @@
 This is just a personal website using things I've learned in HTML, CSS, and JavaScript.
 
 But I do think it's pretty cool.
+
+Website link: https://valentinblehaut.github.io
