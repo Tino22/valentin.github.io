@@ -18,7 +18,7 @@ body {
     align-items: center;
     padding-left: 1em;
     padding-right: 1em;
-}
+}  
 
 .navMenu a {
     justify-content: flex-end;
@@ -31,6 +31,23 @@ body {
     padding-right: 1em;
     margin-bottom: 1em;
 }
+
+#cube {
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 20s linear infinite;
+  }
+  
+  #cube > div {
+    position: absolute;
+    transform-style: preserve-3d;
+  }
+  
+  @keyframes spin {
+    from { transform: rotateX(-0.1turn) rotateY(0turn); }
+    to { transform: rotateX(-0.1turn) rotateY(1turn); }
+  }
+
 
 .navMenu a:hover{
     color: rgb(226, 247, 255);
