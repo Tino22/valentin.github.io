@@ -12,16 +12,29 @@ body {
     color: rgb(220, 238, 255);
 }  
 
+.navMenu {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 2em;
+}
+
 .navMenu a {
-    justify-content: flex-end;
     color: rgb(171, 211, 248);
     font-size: 1.4em;
     text-decoration: none;
-    display: inline-flex;
     flex-direction: column;
-    padding-left: 1em;
+    padding-left: 2em;
+    padding-top: 1em;
     padding-right: 1em;
     margin-bottom: 1em;
+}
+
+#spinnyboi {
+    display: flex;
+    padding-left: 8em;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
 }
 
 #cube {
@@ -36,8 +49,8 @@ transform-style: preserve-3d;
 }
 
 @keyframes spin {
-from { transform: rotateX(-0.1turn) rotateY(0turn); }
-to { transform: rotateX(-0.1turn) rotateY(1turn); }
+from { transform: rotateX(-0.06turn) rotateY(0turn); }
+to { transform: rotateX(-0.06turn) rotateY(1turn); }
 }
 
 #cube > div > div {
@@ -63,9 +76,12 @@ main {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: left;
     padding-left: 1em;
     padding-right: 1em;
+
+    margin-left: 5em;
+    margin-right: 5em;
 }
 
 h1 {
@@ -78,12 +94,19 @@ main div.introText {
 }
 
 footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     margin-top: 2em;
+    margin-bottom: 2em;
+    justify-content: center;
 }
 
 button, input.submit {
     margin-top: 1em;
     margin-bottom: 1em;
+    margin-right: 40em;
+    margin-left: 1em;
     padding: 1em;
     background-color: rgb(255, 168, 226);
     color: rgb(231, 243, 255);
